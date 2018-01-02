@@ -12,6 +12,12 @@
 		7E5DA3B51FFB3DE0002C131E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5DA3B31FFB3DE0002C131E /* Main.storyboard */; };
 		7E5DA3B71FFB3DE0002C131E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5DA3B61FFB3DE0002C131E /* Assets.xcassets */; };
 		7E5DA3BA1FFB3DE0002C131E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5DA3B81FFB3DE0002C131E /* LaunchScreen.storyboard */; };
+		7E5DA3C21FFB4065002C131E /* IntroStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5DA3C11FFB4065002C131E /* IntroStoryBoard.storyboard */; };
+		7E5DA3C41FFB4089002C131E /* ReportStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5DA3C31FFB4089002C131E /* ReportStoryBoard.storyboard */; };
+		7E5DA3C61FFB40B4002C131E /* UserSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5DA3C51FFB40B4002C131E /* UserSetting.storyboard */; };
+		7E5DA3C81FFB40C7002C131E /* Receipt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5DA3C71FFB40C7002C131E /* Receipt.storyboard */; };
+		7E5DA3CA1FFB40E1002C131E /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5DA3C91FFB40E1002C131E /* Register.storyboard */; };
+		ECD318E63465C3A08C06B560 /* Pods_MyReceiptUi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A60A5044C60541F6496D0B28 /* Pods_MyReceiptUi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,14 @@
 		7E5DA3B61FFB3DE0002C131E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E5DA3B91FFB3DE0002C131E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E5DA3BB1FFB3DE0002C131E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E5DA3C11FFB4065002C131E /* IntroStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IntroStoryBoard.storyboard; sourceTree = "<group>"; };
+		7E5DA3C31FFB4089002C131E /* ReportStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReportStoryBoard.storyboard; sourceTree = "<group>"; };
+		7E5DA3C51FFB40B4002C131E /* UserSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserSetting.storyboard; sourceTree = "<group>"; };
+		7E5DA3C71FFB40C7002C131E /* Receipt.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Receipt.storyboard; sourceTree = "<group>"; };
+		7E5DA3C91FFB40E1002C131E /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		8947CC50BA5105C3617B94AE /* Pods-MyReceiptUi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyReceiptUi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyReceiptUi/Pods-MyReceiptUi.debug.xcconfig"; sourceTree = "<group>"; };
+		A60A5044C60541F6496D0B28 /* Pods_MyReceiptUi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyReceiptUi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF0BBCE3367E90254370E85 /* Pods-MyReceiptUi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyReceiptUi.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyReceiptUi/Pods-MyReceiptUi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,104 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD318E63465C3A08C06B560 /* Pods_MyReceiptUi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		093718DF8AF248B11C6DF3F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8947CC50BA5105C3617B94AE /* Pods-MyReceiptUi.debug.xcconfig */,
+				FFF0BBCE3367E90254370E85 /* Pods-MyReceiptUi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E047A951FFB69220017984D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7E5DA3AF1FFB3DE0002C131E /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		7E047A961FFB69660017984D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7E047A9D1FFB6A4D0017984D /* CustomView */,
+				7E047A9C1FFB6A370017984D /* StoryBoard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7E047A971FFB69A90017984D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7E5DA3B11FFB3DE0002C131E /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7E047A981FFB69B90017984D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7E5DA3B61FFB3DE0002C131E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7E047A991FFB69D30017984D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7E047A9A1FFB69E10017984D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7E047A9B1FFB69ED0017984D /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		7E047A9C1FFB6A370017984D /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				7E5DA3B81FFB3DE0002C131E /* LaunchScreen.storyboard */,
+				7E5DA3B31FFB3DE0002C131E /* Main.storyboard */,
+				7E5DA3C31FFB4089002C131E /* ReportStoryBoard.storyboard */,
+				7E5DA3C51FFB40B4002C131E /* UserSetting.storyboard */,
+				7E5DA3C71FFB40C7002C131E /* Receipt.storyboard */,
+				7E5DA3C11FFB4065002C131E /* IntroStoryBoard.storyboard */,
+				7E5DA3C91FFB40E1002C131E /* Register.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		7E047A9D1FFB6A4D0017984D /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		7E5DA3A31FFB3DE0002C131E = {
 			isa = PBXGroup;
 			children = (
 				7E5DA3AE1FFB3DE0002C131E /* MyReceiptUi */,
 				7E5DA3AD1FFB3DE0002C131E /* Products */,
+				093718DF8AF248B11C6DF3F5 /* Pods */,
+				B7628701C5B64763A5FC512A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +155,24 @@
 		7E5DA3AE1FFB3DE0002C131E /* MyReceiptUi */ = {
 			isa = PBXGroup;
 			children = (
-				7E5DA3AF1FFB3DE0002C131E /* AppDelegate.swift */,
-				7E5DA3B11FFB3DE0002C131E /* ViewController.swift */,
-				7E5DA3B31FFB3DE0002C131E /* Main.storyboard */,
-				7E5DA3B61FFB3DE0002C131E /* Assets.xcassets */,
-				7E5DA3B81FFB3DE0002C131E /* LaunchScreen.storyboard */,
+				7E047A9B1FFB69ED0017984D /* Presenters */,
+				7E047A9A1FFB69E10017984D /* Models */,
+				7E047A991FFB69D30017984D /* Services */,
+				7E047A951FFB69220017984D /* Application */,
+				7E047A971FFB69A90017984D /* Controllers */,
+				7E047A961FFB69660017984D /* Views */,
+				7E047A981FFB69B90017984D /* Resources */,
 				7E5DA3BB1FFB3DE0002C131E /* Info.plist */,
 			);
 			path = MyReceiptUi;
+			sourceTree = "<group>";
+		};
+		B7628701C5B64763A5FC512A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A60A5044C60541F6496D0B28 /* Pods_MyReceiptUi.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E5DA3BE1FFB3DE0002C131E /* Build configuration list for PBXNativeTarget "MyReceiptUi" */;
 			buildPhases = (
+				8E6469CD741CD9C72458C976 /* [CP] Check Pods Manifest.lock */,
 				7E5DA3A81FFB3DE0002C131E /* Sources */,
 				7E5DA3A91FFB3DE0002C131E /* Frameworks */,
 				7E5DA3AA1FFB3DE0002C131E /* Resources */,
+				3C7B49E487F6EA794E89D7CE /* [CP] Embed Pods Frameworks */,
+				72D5CF9708324F4865409B7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,13 +237,84 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E5DA3C41FFB4089002C131E /* ReportStoryBoard.storyboard in Resources */,
+				7E5DA3C81FFB40C7002C131E /* Receipt.storyboard in Resources */,
 				7E5DA3BA1FFB3DE0002C131E /* LaunchScreen.storyboard in Resources */,
 				7E5DA3B71FFB3DE0002C131E /* Assets.xcassets in Resources */,
+				7E5DA3C21FFB4065002C131E /* IntroStoryBoard.storyboard in Resources */,
+				7E5DA3C61FFB40B4002C131E /* UserSetting.storyboard in Resources */,
 				7E5DA3B51FFB3DE0002C131E /* Main.storyboard in Resources */,
+				7E5DA3CA1FFB40E1002C131E /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C7B49E487F6EA794E89D7CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyReceiptUi/Pods-MyReceiptUi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyReceiptUi/Pods-MyReceiptUi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72D5CF9708324F4865409B7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyReceiptUi/Pods-MyReceiptUi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E6469CD741CD9C72458C976 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyReceiptUi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7E5DA3A81FFB3DE0002C131E /* Sources */ = {
@@ -272,6 +457,7 @@
 		};
 		7E5DA3BF1FFB3DE0002C131E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8947CC50BA5105C3617B94AE /* Pods-MyReceiptUi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +472,7 @@
 		};
 		7E5DA3C01FFB3DE0002C131E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFF0BBCE3367E90254370E85 /* Pods-MyReceiptUi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

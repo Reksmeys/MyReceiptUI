@@ -1,0 +1,6 @@
+framework module Pods_MyReceiptUi {
+  umbrella header "Pods-MyReceiptUi-umbrella.h"
+
+  export *
+  module * { export * }
+}
